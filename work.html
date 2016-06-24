@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style3.css" />
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="oooForm" name="oooForm">
+        <h2>Contact Us</h2>
+        <label for="oooDate">Дата складання документів:<input type="date" name="oooDate" id="oooDate" value="2016-04-04" placeholder="__.__.__" size="8"></label>
+        <span class="formHint">Proper format email</span>
+
+        <h2>Назва</h2>
+        <h3>Українською:</h3>
+        <div class="inline">
+            <label for="opf"><p>Організаційно-правова форма:</p>
+                <select name="opf" id="opf">
+                    <option>Товариство з обмеженою відповідальністю</option><option>Приватне підприємство</option>
+                </select>
+            </label><span class="formHint">Proper format email</span>
+        </div>
+        <div class="inline">
+            <label for="oooNameFull"><p>Повна назва:</p><input type="text" name="oooNameFull" id="oooNameFull" size="40" value="Просто Офигенная Ромашка, НИИ"></label>
+            <span class="formHint">Proper format email</span>
+        </div>
+
+        <label for="oooNameShort">Скорочена назва:<span id="opfShort">ТОВ </span><input type="text" name="oooNameShort" id="oooNameShort" size="15" value="ПОР, НИИ ВГТР"></label>
+        <span class="formHint">Proper format email</span>
+
+
+        <h2>Адреса</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="tabs">
+            <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1">
+            <label for="tab-1" class="tab-label-1">Київ</label>
+
+            <input type="radio" id="oooOblast" name="radio-set" class="tab-selector-2">
+            <label for="oooOblast" class="tab-label-2">Область</label>
+
+            <input type="radio" id="oooCrimea" name="radio-set" class="tab-selector-3">
+            <label for="oooCrimea" class="tab-label-3">Крим</label>
+
+
+
+            <div class="clear-shadow"></div>
+
+            <div class="content">
+                <div class="content-1">
+
+                    <p>Індекс:</p>
+                    <input type="number" name="oooIndex" maxlength="5" size="5" value="01021">
+
+                    <span class="none">
+                    <p>Тип населенного пункту:</p>
+                    <p>
+                        <label for="oooMisto">Місто </label><input type="radio" name="oooMisto" id="oooMisto" value="&#10004">
+                        <label for="oooSMT">Селище міського типу </label><input type="radio" name="oooMisto"  id="oooSMT"value="&#10004" >
+                        <label for="oooSeli">Селище </label><input type="radio" name="oooMisto" id="oooSeli" value="&#10004">
+                        <label for="oooSel">Село </label><input type="radio" name="oooMisto" id="oooSel" value="&#10004" >
+                    </p>
+
+                        <p>Назва населенного пункту:</p>
+                        <input type="text" name="oooMistoName" size="30">
+</span>
+
+                    Район <input type="radio" name="oooRayon" id="oooRayon" value="&#10004" checked="checked">
+                    <input type="text" name="oooRayonName" size="30" value="Печерський">
+<span class="inline">
+                        <p>Вулиця:</p>
+                        <input type="text" name="oooStreetName" size="35" value="Інститутська">
+</span><span class="inline">
+                        <p>Будинок:</p>
+                        <input type="text" name="oooHouse" size="7" value="16">
+                    </span>
+                    <p>Корпус:</p>
+                    <input type="text" name="oooKorpus" value="нема">
+
+                    <p>Тип приміщення:</p>
+                    <input type="text" name="oooOfficeType" value="офіс">
+
+                    <p>Номер приміщення:</p>
+                    <input type="text" name="oooOffice" size="7" value="1">
+
+                </div>
+                <div class="content-2">
+
+                    <p>Індекс:</p>
+                    <input type="number" name="oooIndex" maxlength="5" size="5" value="01021">
+
+                    <p>Тип населенного пункту:</p>
+                    <p>
+                        <label for="oooMisto">Місто </label><input type="radio" name="oooMisto" id="oooMisto" value="&#10004">
+                        <label for="oooSMT">Селище міського типу </label><input type="radio" name="oooMisto"  id="oooSMT"value="&#10004" >
+                        <label for="oooSeli">Селище </label><input type="radio" name="oooMisto" id="oooSeli" value="&#10004">
+                        <label for="oooSel">Село </label><input type="radio" name="oooMisto" id="oooSel" value="&#10004" >
+                    </p>
+
+                    <p>Назва населенного пункту:</p>
+                    <input type="text" name="oooMistoName" size="30">
+
+
+                    Район <input type="radio" name="oooRayon" id="oooRayon" value="&#10004" checked="checked">
+                    <input type="text" name="oooRayonName" size="30" value="Печерський">
+<span class="inline">
+                        <p>Вулиця:</p>
+                        <input type="text" name="oooStreetName" size="35" value="Інститутська">
+</span><span class="inline">
+                        <p>Будинок:</p>
+                        <input type="text" name="oooHouse" size="7" value="16">
+                    </span>
+                    <p>Корпус:</p>
+                    <input type="text" name="oooKorpus" value="нема">
+
+                    <p>Тип приміщення:</p>
+                    <input type="text" name="oooOfficeType" value="офіс">
+
+                    <p>Номер приміщення:</p>
+                    <input type="text" name="oooOffice" size="7" value="1">
+                </div>
+                <div class="content-3">
+
+                    <p>Індекс:</p>
+                    <input type="number" name="oooIndex" maxlength="5" size="5" value="01021">
+
+
+                    <p>Тип населенного пункту:</p>
+                    <p>
+                        Місто <input type="radio" name="oooMisto" id="oooMisto" value="&#10004" checked="checked">
+                        Селище міського типу <input type="radio" name="oooMisto"  id="oooSMT"value="&#10004" >
+                        Селище <input type="radio" name="oooMisto" id="oooSeli" value="&#10004">
+                        Село <input type="radio" name="oooMisto" id="oooSel" value="&#10004" >
+                    </p>
+
+                    <p>Назва населенного пункту:</p>
+                    <input type="text" name="oooMistoName" size="30">
+
+
+                    Район <input type="radio" name="oooRayon" id="oooRayon" value="&#10004" checked="checked">
+                    <input type="text" name="oooRayonName" size="30" value="Печерський">
+<span class="inline">
+                        <p>Вулиця:</p>
+                        <input type="text" name="oooStreetName" size="35" value="Інститутська">
+</span><span class="inline">
+                        <p>Будинок:</p>
+                        <input type="text" name="oooHouse" size="7" value="16">
+                    </span>
+                    <p>Корпус:</p>
+                    <input type="text" name="oooKorpus" value="нема">
+
+                    <p>Тип приміщення:</p>
+                    <input type="text" name="oooOfficeType" value="офіс">
+
+                    <p>Номер приміщення:</p>
+                    <input type="text" name="oooOffice" size="7" value="1">
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <h2>Статутний капітал</h2>
+        <h3>Розмір статутного капіталу:</h3>
+        <input type="number" name="oooCapital" pattern="\d+(,\d{2})?" value="1000">
+
+        <h2>Статут</h2>
+        <p><input type="radio" name="oooStatute" value="Cтатут"> Звичайний статут <input type="radio" name="oooStatute" value="Модельний статут" > Модельный статут</p>
+
+        <h2>Засновник(и)</h2>
+        <div id="shareholder">
+            <div class="line">
+                <div>
+                    <div class="inline">
+                        <p>ФІО засновника:</p>
+                        <input type="text" name="shareholderFio" size="50" value="Лопатін Артем Сергійович">
+                    </div>
+                    <div class="inline">
+                        <p>Доля (грн):</p>
+                        <input type="number" name="shareholderShareMoney" class="shareholderShareMoney">
+                    </div>
+                    <div class="inline">
+                        <p>Доля (%):</p>
+                        <input type="number" name="shareholderShare" class="shareholderShare" size="3">
+                    </div>
+                </div>
+                <div>
+                    <div class="inline">
+                        <p>Податковий номер засновника:</p>
+                        <input type="number" name="shareholderId" maxlength="10" value="2901012193">
+                    </div>
+                    <div class="inline">
+                        <p>Країна резиденства:</p>
+                        <input type="text" name="shareholderCountryR" value="Україна">
+                    </div>
+                    <p>Місце проживання:</p>
+                    <p>
+                        Україна <input type="radio" name="shareholderCountry" id="shareholderCountryUkr" value="&#10004" checked="checked">
+                        Інша країна <input type="radio" name="shareholderCountry"  id="shareholderCountryOther">
+                    </p>
+                    <div class="inline">
+                        <p>Індекс:</p>
+                        <input type="number" name="shareholderIndex" maxlength="5" value="03110">
+                    </div>
+                    <p>Тип населенного пункту:</p>
+                    <p>
+                        Місто <input type="radio" name="shareholderMisto" id="shareholderMisto" value="&#10004" checked="checked">
+                        Селище міського типу <input type="radio" name="shareholderMisto"  id="shareholderSMT"value="&#10004" >
+                        Селище <input type="radio" name="shareholderMisto" id="shareholderSeli" value="&#10004">
+                        Село <input type="radio" name="shareholderMisto" id="shareholderSel" value="&#10004" >
+                    </p>
+                    <div class="inline">
+                        <p>Назва населенного пункту:</p>
+                        <input type="text" name="shareholderMistoName" size="30" value="Київ">
+                    </div>
+                    <div class="inline">
+                        Район <input type="radio" name="shareholderRayon" id="shareholderRayon" value="&#10004" checked="checked">
+                        <input type="text" name="shareholderRayonName" size="30" value="Голосіївський">
+                    </div>
+                    <div class="inline">
+                        <p>Вулиця:</p>
+                        <input type="text" name="shareholderStreet" value="Солом'янська">
+                    </div>
+                    <div class="inline">
+                        <p>Номер будинку:</p>
+                        <input type="text" name="shareholderHouse" value="10">
+                    </div>
+                    <div class="inline">
+                        <p>Тип приміщення:</p>
+                        <input type="text" name="shareholderOfficeType" list="shareholderOfficeType" value="квартира">
+                        <datalist id="shareholderOfficeType">
+                            <option>квартира</option><option>кімната</option><option>блок</option>
+                        </datalist>
+                    </div>
+                    <div class="inline">
+                        <p>Номер приміщення:</p>
+                        <input type="text" name="shareholderOffice" value="15">
+                    </div>
+                </div>
+                <p>Паспорт засновника:</p>
+                <div class="inline">
+                    <p>Серія:</p>
+                    <input type="text" name="shareholderPassSeries" size="2" value="ЕА">
+                </div>
+                <div class="inline">
+                    <p>Номер:</p>
+                    <input type="number" name="shareholderPassNumber" size="6" value="072088">
+                </div>
+                <div class="inline">
+                    <p>Видан:</p>
+                    <input type="text" name="shareholderPassIssued" value="Ленінським РВ УМВС України в Кіровоградській обл">
+                </div>
+                <div class="inline">
+                    <p>Дата видачі:</p>
+                    <input type="date" name="shareholderPassIssueDate" value="1986-03-13">
+                </div>
+                <div class="inline">
+                    <p>Дата народження засновника:</p>
+                    <input type="date" name="shareholderDateB" value="1979-06-05">
+                </div>
+
+            </div>
+        </div>
+        <button id="createShareholder">Додати засновника</button>
+        <button id="removeShareholder">Прибрати засновника</button>
+
+        <p><div class="inline">
+        Директор <input type="radio" name="upravVikon" id="upravVikon" value="директор" checked="checked">
+        Дирекція <input type="radio" name="upravDir">
+    </div></p>
+
+        <h2>Керівник</h2>
+        <div class="line">
+            <p>ФІО керівника:</p>
+            <div class="inline">
+                <p>Призвище керівника:</p>
+                <input type="text" name="directorLastName" value="Мукшименко">
+            </div>
+            <div class="inline">
+                <p>Ім'я керівника:</p>
+                <input type="text" name="directorFirstName" value="Олександр">
+            </div>
+            <div class="inline">
+                <p>По батькові керівника:</p>
+                <input type="text" name="directorOtch" value="Олександрович">
+            </div>
+            <div class="inline">
+                <p>Дата народження керівника:</p>
+                <input type="date" name="directorDateB" value="1986-05-09">
+            </div>
+            <div class="inline">
+                <p>Податковий номер керівника:</p>
+                <input type="number" name="directorId" value="2089215112">
+            </div>
+            <div class="inline">
+                <p>Паспорт керівника:</p>
+                <input type="text" name="directorPass">
+            </div>
+            <div class="inline">
+                <p>Дата призначення керівника:</p>
+                <input type="date" name="directorDate" value="2016-04-01">
+            </div>
+
+
+            <h2>Види діяльності</h2>
+            <div id="kvedy">
+                <div class="line">
+
+                    <p>Основний вид діяльності:</p>
+                    <input type="text" class="kvedInput" value="01.01">
+                </div>
+                <div>
+                    <p>Вид діяльності 1:</p>
+                    <input type="text" class="kvedInput" value="02.02">
+                </div>
+                <div>
+                    <p>Вид діяльності 2:</p>
+                    <input type="text" class="kvedInput" value="03.03">
+                </div>
+                <div>
+                    <p>Вид діяльності 3:</p>
+                    <input type="text" class="kvedInput" value="04.04">
+                </div>
+                <div>
+                    <p>Вид діяльності 4:</p>
+                    <input type="text" class="kvedInput" value="05.05">
+                </div>
+                <div>
+                    <p>Вид діяльності 5:</p>
+                    <input type="text" class="kvedInput" value="06.06">
+                </div>
+                <div>
+                    <p>Вид діяльності 6:</p>
+                    <input type="text" class="kvedInput" value="07.07">
+                </div>
+                <div>
+                    <p>Вид діяльності 7:</p>
+                    <input type="text" class="kvedInput" value="08.08">
+                </div>
+                <div>
+                    <p>Вид діяльності 8:</p>
+                    <input type="text" class="kvedInput" value="09.09">
+                </div>
+                <div>
+                    <p>Вид діяльності 9:</p>
+                    <input type="text" class="kvedInput" value="11.11">
+                </div>
+            </div>
+            <div>
+                <p>Зв'язок:</p>
+                <input type="text" name="oooContactPhone1" value="+380674090909">
+            </div>
+            <button id="createKved">Додати засновника</button>
+            <button id="removeKved">Прибрати засновника</button>
+            <button id="createDocs">Документы</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

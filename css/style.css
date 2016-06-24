@@ -1,0 +1,277 @@
+h1, h2, h3, h4, h5, h6{
+    margin:10px auto;
+    text-align: center;
+    font-weight: bold;
+}
+.wrapper{
+    width: 70%;
+    min-width:960px;
+    margin:0 auto;
+}
+.oooForm{
+    width: 65%;
+    display:inline-block;
+    border:1px solid black;
+}
+.description{
+    width: 35%;
+    display:inline-block;
+    border:1px solid black;
+
+}
+section{
+    margin-top:15px;
+    border:1px solid #28921f;
+    box-shadow: 0 0 5px #5cd053;
+    border-radius:5px 5px 0 0;
+
+}
+.content {
+    margin-bottom:10px;
+
+    padding-bottom:10px;
+}
+
+
+.oooform h2{
+
+}
+.oooform h3{
+    font-weight: bold;
+}
+/*------------------ другие стили ------------------*/
+:-moz-placeholder {
+    color: blue;
+}
+::-webkit-input-placeholder {
+     color: blue;
+}
+*:focus {outline: none;}
+body {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+.oooform h2, .oooform label {font-family:Georgia, Times, "Times New Roman", serif;}
+.hint {font-size: 11px;}
+
+.oooform input {
+
+}
+
+.oooform label {
+    width:46%;
+    margin-top: 3px;
+    display: inline-block;
+    padding:3px;
+    cursor: pointer;
+    background-color: lightgray;
+    border:1px solid gray;
+    text-align: center;
+    color:grey;
+ }
+
+.oooAdressBtns label{
+    width:30%;
+}
+.contact_form textarea {padding:8px; width:300px;}
+.contact_form button {margin-left:156px;}
+
+
+input[type='radio']:checked + label {
+    background-color:#68b12f;
+    color:black;
+
+}
+.oooform input,select{
+
+    margin: 0 5px;
+    padding:5px 25px 5px 8px;
+    border-radius:5px;
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    transition: box-shadow .25s;
+}
+.oooform input:focus, select:focus {
+    background: #fff;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+input:required,select:required {
+    background: #fff url(../img/required.png) no-repeat 98% center;
+}
+.oooform input:invalid {
+    background: #fff url(../img/invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+.oooform input:valid, select:valid {
+    background: #fff url(../img/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+/* Button Style */
+button {
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 5px #5cd053;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+    width: 49.7%;
+    margin: 0;
+}
+.oooNameBtn:nth-of-type(odd){
+    box-shadow: -5px -5px 5px #5cd053;
+}
+.oooNameBtn:nth-of-type(even){
+    box-shadow: 5px 0 5px #5cd053;
+}
+button:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+button:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+/*-------------конец других стилей------------------*/
+
+
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс.*/
+.shareholderCountry{
+
+}
+
+.shareholderCountry:nth-of-type(1) {
+
+border-radius: 10px 0 0 10px;
+}
+.shareholderCountry:nth-of-type(2) {
+
+    border-radius:  0 10px 10px 0;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен.
+.checkbox + label {
+    cursor: pointer;
+}
+*/
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс.
+.checkbox:not(checked) {
+    position: absolute;
+    opacity: 0;
+}*/
+/*
+.checkbox:not(checked) + label {
+    position: relative;  будем позиционировать псевдочекбокс относительно label */
+/*    padding: 0 0 0 60px;  оставляем слева от label место под псевдочекбокс
+}*/
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.shareholderCountry:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background: #CDD1DA;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.shareholderCountry:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.shareholderCountry:checked + label:before {
+    background: #9FD468;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.shareholderCountry:checked + label:after {
+    left: 26px;
+}
+/* Показываем получение фокуса. */
+.shareholderCountry:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+
+/*------------------------------------*/
+
+
+
+.oooform p{
+    margin:10px 0 5px 5px;
+    margin-left: 8px;
+}
+
+.line{
+     display: block;
+}
+.inline{
+    display: inline-block;
+}
+
+input[type='radio']{
+    display:none;
+    position: absolute;
+}
+/*.r_button + label {
+    background: url("radio.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    padding-left: 25px;
+}
+*/
+
+
+article + article, .page {
+    page-break-before: always;
+    width:200mm;
+}
+table {
+    border-collapse: collapse;
+}
+
+.page p{
+margin:15px 0;
+}
+
+.docwrapper table td, th{
+    border:1px solid black;
+    width: 6mm;
+    height: 6mm;
+}
+.none{
+    display:none;
+}
+.clear{
+    clear: both;
+}
+.shareholderShare{
+    width: 50px;
+}

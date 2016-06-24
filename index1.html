@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="oooform">
+        <p>Дата складання документів:<input type="date" name="oooDate0" placeholder="__.__.__" size="8" required></p>
+
+        <section id="oooName">
+            <h2>Назва</h2>
+            <div class="content" id="oooUkrName0">
+                <span class="inline">
+                    <input type="text" class="oooNameLang" name="oooNameLang0" id="oooNameLang0" list="oooNameLangList0" placeholder="Оберіть мову" value="Українською" disabled>
+                    <datalist id="oooNameLangList0"><option>Українською</option><option>Англійською</option><option>Російською</option></datalist>
+                </span>
+                <span class="inline">
+                    <p class="changeOpf" id="opf0" style="width: 200px;">ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ</p>
+                </span>
+                <span class="inline">
+                    <p>Повна назва:</p>
+                    <p>"<input type="text" name="oooNameFull0" size="40" required>"</p>
+                </span>
+                <span class="inline">
+                    <p>Скорочена назва:</p>
+                    <p><span class="changeOpfShort" id="opfShort0">ТОВ</span> <input type="text" name="oooNameShort0" size="15" pattern="([А-Яа-я0-9]+)"></p>
+                </span>
+            </div>
+
+        </section>
+        <button id="createOooName">Додати найменування</button>
+        <button id="removeOooName">Прибрати найменування</button>
+        <section class="" id="oooAddress">
+            <div class="oooAdressBtns">
+                <input type="radio" id="oooKiev0" name="oooAddress0" class="" value="&#10004" checked="checked">
+                <label for="oooKiev0" class="">Київ</label>
+
+                <input type="radio" id="oooOblast0" name="oooAddress0" class="" value="&#10004">
+                <label for="oooOblast0" class="">Область</label>
+
+                <input type="radio" id="oooCrimea0" name="oooAddress0" class="" value="&#10004">
+                <label for="oooCrimea0" class="">Крим</label>
+            </div>
+            <div class="clear"></div>
+
+            <div class="content">
+                    <span class="inline">
+                        <p>Індекс:</p>
+                        <input type="number" name="oooIndex0" maxlength="5" size="5" value="" required>
+                    </span>
+                    <span class="inline">
+                        <p>Назва області:</p>
+                        <input type="text" name="oooOblast0" value="">
+                    </span>
+                    <span class="inline">
+                        <p>Тип населенного пункту:</p>
+                        <input type="text" name="oooMistoType0" list="oooMistoType0" required >
+                        <datalist id="oooMistoType0">
+                            <option>місто</option><option>селище міського типу</option><option>селище</option><option>село</option>
+                        </datalist>
+                    </span>
+                    <span class="inline">
+                        <p>Назва населенного пункту:</p>
+                        <input type="text" name="oooMistoName0" size="30" required>
+                    </span>
+                    <span class="inline">
+                        <p>Район <input type="radio" name="oooRayon0" id="oooRayon0" value="&#10004"></p>
+                    </span>
+                    <span class="inline">
+                        <p>Назва району</p>
+                        <input type="text" name="oooRayonName0" size="30">
+                    </span>
+                    <span class="inline">
+                        <p>Тип ВДМ:</p>
+                        <input type="text" name="oooStreetType0" list="oooStreetType0" required >
+                        <datalist id="oooStreetType0">
+                            <option>вулиця</option><option>провулок</option><option>проспект</option><option>площа</option>
+                        </datalist>
+                    </span>
+                    <span class="inline">
+                        <p>Вулиця:</p>
+                        <input type="text" name="oooStreetName0" size="35" required>
+                    </span>
+                    <span class="inline">
+                        <p>Будинок:</p>
+                        <input type="text" name="oooHouse0" size="7" required>
+                    </span>
+                    <span class="inline">
+                        <p>Корпус:</p>
+                        <input type="text" name="oooKorpus0">
+                    </span>
+                    <span class="inline">
+                        <p>Тип приміщення:</p>
+                        <input type="text" name="oooOfficeType0">
+                    </span>
+                    <span class="inline">
+                        <p>Номер приміщення:</p>
+                        <input type="text" name="oooOffice0" size="7">
+                    </span>
+            </div>
+        </section>
+
+
+        <h2>Статутний капітал</h2>
+        <div class="inline"><h3>Розмір статутного капіталу:</h3></div>
+        <div class="inline"><input type="number" name="oooCapital" pattern="\d+(,\d{2})?"  required></div>
+
+        <h2>Засновник(и)</h2>
+
+        <section class="" id="shareholder">
+                <span class="">
+                    <div class="" id="shareholderTabs0">
+                        <input type="radio" id="shF0" name="oooShareholder0" class="" checked="checked" value="&#10004">
+                        <label for="shF0" id="shFl0" class="tab">Фізична особа</label>
+
+                        <input type="radio" id="shU0" name="oooShareholder0" class="" value="&#10004">
+                        <label for="shU0" id="shUl0" class="tab">Юридична особа</label>
+                    </div>
+
+                    <div class="content" id="shareholderContent0">
+                        <span class="inline">
+                            <p class="change">Країна громадянства:</p>
+                            <input type="text" name="shareholderCountryR0" value="Україна" required>
+                        </span>
+                        <span class="inline">
+                            <p class="change">ФІО засновника:</p>
+                            <input type="text" name="shareholderFio0" size="60" required >
+                        </span>
+                        <span class="inline">
+                            <p>Доля (грн):</p>
+                            <input type="number" name="shareholderShareMoney0" class="shareholderShareMoney" required>
+                        </span>
+                        <span class="inline">
+                            <p>Доля (%):</p>
+                            <input type="number" name="shareholderShare0" class="shareholderShare" size="3">
+                        </span>
+                        <div></div>
+                        <span class="inline" style="width:30%">
+                            <p class="change">Місце проживання:</p>
+                            <div class="shareholderCountryBtns">
+                                <input type="radio" name="shareholderCountry0" id="shareholderCountryUkr0" value="&#10004" checked="checked">
+                                <label for="shareholderCountryUkr0" id="sCU0" class="shareholderCountry">Україна</label>
+                                <input type="radio" name="shareholderCountry0"  id="shareholderCountryOther0" value="&#10004">
+                                <label for="shareholderCountryOther0" id="sCO0" class="shareholderCountry">Інша країна</label>
+                            </div>
+                        </span>
+                        <span class="inline">
+                            <p>Індекс:</p>
+                            <input type="number" name="shareholderIndex0" maxlength="5" required >
+                        </span>
+                        <span class="inline">
+                        <p>Тип населенного пункту:</p>
+                            <select class="shareholderMistoType" name="shareholderMistoType0" id="shareholderMistoType0" required >
+                                <option value="місто">місто</option><option value="селище міського типу">селище міського типу</option><option value="селище">селище</option><option value="село">село</option>
+                            </select>
+                        </span>
+                        <!--
+                        <p>
+                             <input type="radio" name="shareholderMisto" id="shareholderMisto" value="&#10004" checked="checked">
+                            <label for="shareholderMisto" id="sMisto" class="">Місто</label>
+                             <input type="radio" name="shareholderMisto"  id="shareholderSMT"value="&#10004" >
+                            <label for="shareholderSMT" id="sSMT" class="">Селище міського типу</label>
+                             <input type="radio" name="shareholderMisto" id="shareholderSeli" value="&#10004">
+                            <label for="shareholderSeli" id="sSeli" class="">Селище</label>
+                             <input type="radio" name="shareholderMisto" id="shareholderSel" value="&#10004" >
+                            <label for="shareholderSel" id="sSel" class="">Село</label>
+                        </p>-->
+                        </span>
+                        <span class="inline">
+                            <p>Назва населенного пункту:</p>
+                            <input type="text" name="shareholderMistoName0" size="30" required >
+                        </span>
+                        <span class="inline">
+                            Район <input type="radio" name="shareholderRayon0" id="shareholderRayon0" value="&#10004" checked="checked">
+                            <input type="text" name="shareholderRayonName0" size="30" >
+                        </span>
+                         <span class="inline">
+                            <p>Тип ВДМ:</p>
+                            <input type="text" name="shareholderStreetType0" list="shareholderStreetType0" required >
+                            <datalist id="shareholderStreetType0">
+                                <option>вулиця</option><option>провулок</option><option>проспект</option><option>площа</option>
+                            </datalist>
+                        </span>
+                        <span class="inline">
+                            <p>Вулиця:</p>
+                            <input type="text" name="shareholderStreetName0" required >
+                        </span>
+                        <span class="inline">
+                            <p>Номер будинку:</p>
+                            <input type="text" name="shareholderHouse0" size="5" required>
+                        </span>
+                        <span class="inline">
+                            <p>Тип приміщення:</p>
+                            <input type="text" name="shareholderOfficeType0" list="shareholderOfficeType0" >
+                            <datalist id="shareholderOfficeType0">
+                                <option>квартира</option><option>кімната</option><option>блок</option>
+                            </datalist>
+                        </span>
+                        <span class="inline">
+                            <p>Номер приміщення:</p>
+                            <input type="text" name="shareholderOffice0" size="5" >
+                        </span>
+            <div></div>
+                         <span class="inline">
+                            <p class="change">Податковий номер:</p>
+                            <input type="number" name="shareholderId0" maxlength="10"  size="10" required>
+                        </span>
+                        <span class="inline">
+                            <p>Паспорт засновника:</p>
+                            <p class="inline">Серія: <input type="text" name="shareholderPassSeries0" size="2" required ></p>
+                            <p class="inline">Номер:<input type="number" name="shareholderPassNumber0" size="6" required ></p>
+                        </span>
+                        <span class="inline">
+                            <p>Видан:</p>
+                            <input type="text" name="shareholderPassIssued0" required >
+                        </span>
+                        <span class="inline">
+                            <p>Дата видачі:</p>
+                            <input type="date" name="shareholderPassIssueDate0" required >
+                        </span>
+                        <span class="inline">
+                            <p>Дата народження засновника:</p>
+                            <input type="date" name="shareholderDateB0" required >
+                        </span>
+    </div>
+    </span>
+    </section>
+    <button id="createShareholder">Додати засновника</button>
+    <button id="removeShareholder">Прибрати засновника</button>
+
+
+
+    <p><div class="inline">
+    Директор <input type="radio" name="upravVikon0" id="upravVikon0" value="директор" checked="checked">
+    Дирекція <input type="radio" name="upravDir0">
+</div></p>
+
+    <h2>Керівник</h2>
+    <div class="line">
+        <p>ФІО керівника:</p>
+        <div class="inline">
+            <p>Призвище керівника:</p>
+            <input type="text" name="directorLastName0" required >
+        </div>
+        <div class="inline">
+            <p>Ім'я керівника:</p>
+            <input type="text" name="directorFirstName0" required >
+        </div>
+        <div class="inline">
+            <p>По батькові керівника:</p>
+            <input type="text" name="directorOtch0" required >
+        </div>
+        <div class="inline">
+            <p>Дата народження керівника:</p>
+            <input type="date" name="directorDateB0" required>
+        </div>
+        <div class="inline">
+            <p>Податковий номер керівника:</p>
+            <input type="number" name="directorId0" required>
+        </div>
+        <input type="checkbox" id="noDirCode0">
+            <span class="none" id="dirPass0">
+                <div class="inline">
+                    <p>Серія паспорта керівника:</p>
+                    <input type="text" name="directorPassSeries0">
+                </div>
+                <div class="inline">
+                    <p>Номер паспорта керівника:</p>
+                    <input type="text" name="directorPassNumber0">
+                </div>
+            </span>
+        <div class="inline">
+            <p>Дата призначення керівника:</p>
+            <input type="date" name="directorDate0" required >
+        </div>
+
+        <h2>Види діяльності</h2>
+        <div id="kvedy">
+            <div class="inline">
+                <p>Основний вид діяльності:</p>
+                <input type="text" class="kvedInput" name="kved0" required>
+            </div>
+        </div>
+        <button id="createKved">Додати КВЕД</button>
+        <button id="removeKved">Прибрати КВЕД</button><br>
+        <br>
+        <div>
+            <p>Зв'язок:</p>
+            <input type="text" name="oooContactPhone0" placeholder="+38__________">
+        </div>
+
+        <h2>Статут</h2>
+        <input type="radio" name="oooStatute" id="oooStatuteZvich" value="Cтатут">
+        <label for="oooStatuteZvich" id="oooStatuteZ" class="">Звичайний статут</label>
+        <input type="radio" name="oooStatute" id="oooStatuteMod" value="Модельний статут" >
+        <label for="oooStatuteMod" id="oooStatuteM" class=""> Модельный статут</label>
+
+        </br>
+        <button id="createDocs" href="new.html">Документы</button>
+    </div>
+</div>
+<script src="js/test.js"></script>
+
+</body>
+</html>

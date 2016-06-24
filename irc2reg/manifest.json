@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "IRC2REG",
+  "version": "1.0",
+
+  "icons": {
+    "128": ""
+  },
+  "content_scripts": [
+    {
+      "matches": [ "*://*/*" ],
+      "js": [ "content.js" ]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "https://usrinfo.irc.gov.ua/*"
+  ],
+
+  "browser_action": {
+    "default_title": "IRC2REG",
+    "default_icon": "",
+    "default_popup": "popup.html"
+  }
+
+}
